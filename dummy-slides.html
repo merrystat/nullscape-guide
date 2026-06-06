@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullscape Visual Guide - Curses Slides Dummy</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e; /* 어두운 배경 */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100vh;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #16213e; /* 보라 검정 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            margin: 20px;
+            color: #e0e0e0;
+        }
+        .slide-content {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+        }
+        .left-section {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .right-section {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .slide-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #a855f7; /* 보라색 */
+        }
+        .slide-text {
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .slide-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .additional-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .nav-button {
+            background-color: #a855f7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .nav-button:hover {
+            background-color: #9333ea;
+        }
+        .menu-back {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #a855f7;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #a855f7;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #a855f7;
+        }
+        @media (max-width: 768px) {
+            .slide-content {
+                flex-direction: column;
+            }
+            .left-section, .right-section {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="menu-back" onclick="window.history.back()">메뉴로 돌아가기</button>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <h1 class="slide-title">저주 선택 가이드 - 소개</h1>
+                <div class="slide-content">
+                    <div class="left-section">
+                        <img src="https://via.placeholder.com/300x200?text=Main+Image" alt="메인 이미지" class="slide-image">
+                        <img src="https://via.placeholder.com/300x150?text=Additional+Image" alt="추가 이미지" class="additional-image">
+                    </div>
+                    <div class="right-section">
+                        <div class="slide-text">
+                            <p>Nullscape에서 저주 선택은 게임의 난이도와 플레이 스타일을 결정합니다. 이 가이드를 통해 최적의 저주를 선택하세요.</p>
+                            <ul>
+                                <li>저주 유형 이해</li>
+                                <li>플레이 스타일 맞춤</li>
+                                <li>전략적 선택</li>
+                            </ul>
+                        </div>
+                        <button class="nav-button" onclick="swiper.slideTo(1)">다음 슬라이드</button>
+                        <button class="nav-button" onclick="swiper.slideTo(4)">결론으로 이동</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <h1 class="slide-title">저주 유형 1: 공격형</h1>
+                <div class="slide-content">
+                    <div class="left-section">
+                        <img src="https://via.placeholder.com/300x200?text=Attack+Icon" alt="공격형 아이콘" class="slide-image">
+                        <img src="https://via.placeholder.com/300x150?text=Attack+Stats" alt="공격 통계" class="additional-image">
+                    </div>
+                    <div class="right-section">
+                        <div class="slide-text">
+                            <p>공격력을 높이는 저주. 빠른 클리어를 원한다면 추천합니다.</p>
+                            <p><strong>장점:</strong> 높은 DPS, 빠른 전투</p>
+                            <p><strong>단점:</strong> 낮은 생존성</p>
+                        </div>
+                        <button class="nav-button" onclick="swiper.slidePrev()">이전</button>
+                        <button class="nav-button" onclick="swiper.slideNext()">다음</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <h1 class="slide-title">저주 유형 2: 방어형</h1>
+                <div class="slide-content">
+                    <div class="left-section">
+                        <img src="https://via.placeholder.com/300x200?text=Defense+Icon" alt="방어형 아이콘" class="slide-image">
+                        <img src="https://via.placeholder.com/300x150?text=Defense+Stats" alt="방어 통계" class="additional-image">
+                    </div>
+                    <div class="right-section">
+                        <div class="slide-text">
+                            <p>체력과 방어력을 높이는 저주. 생존에 초점을 맞춘 플레이어에게 적합합니다.</p>
+                            <p><strong>장점:</strong> 높은 생존율, 안정적 플레이</p>
+                            <p><strong>단점:</strong> 낮은 공격력</p>
+                        </div>
+                        <button class="nav-button" onclick="swiper.slidePrev()">이전</button>
+                        <button class="nav-button" onclick="swiper.slideNext()">다음</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <h1 class="slide-title">저주 유형 3: 유틸리티형</h1>
+                <div class="slide-content">
+                    <div class="left-section">
+                        <img src="https://via.placeholder.com/300x200?text=Utility+Icon" alt="유틸리티형 아이콘" class="slide-image">
+                        <img src="https://via.placeholder.com/300x150?text=Utility+Stats" alt="유틸리티 통계" class="additional-image">
+                    </div>
+                    <div class="right-section">
+                        <div class="slide-text">
+                            <p>이동속도나 회복력을 높이는 저주. 전략적인 플레이를 즐기는 분에게 추천합니다.</p>
+                            <p><strong>장점:</strong> 유연한 전략, 빠른 이동</p>
+                            <p><strong>단점:</strong> 특화되지 않은 능력</p>
+                        </div>
+                        <button class="nav-button" onclick="swiper.slidePrev()">이전</button>
+                        <button class="nav-button" onclick="swiper.slideNext()">다음</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <h1 class="slide-title">결론</h1>
+                <div class="slide-content">
+                    <div class="left-section">
+                        <img src="https://via.placeholder.com/300x200?text=Conclusion+Icon" alt="결론 아이콘" class="slide-image">
+                        <img src="https://via.placeholder.com/300x150?text=Final+Tip" alt="최종 팁" class="additional-image">
+                    </div>
+                    <div class="right-section">
+                        <div class="slide-text">
+                            <p>자신의 플레이 스타일에 맞는 저주를 선택하세요. 게임을 즐기면서 최적의 선택을 하세요!</p>
+                            <p>더 많은 정보는 공식 가이드를 참고하세요.</p>
+                        </div>
+                        <button class="nav-button" onclick="swiper.slideTo(0)">처음으로</button>
+                        <button class="nav-button" onclick="window.location.href='/'">홈으로</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            keyboard: {
+                enabled: true,
+            },
+            a11y: {
+                prevSlideMessage: '이전 슬라이드',
+                nextSlideMessage: '다음 슬라이드',
+                firstSlideMessage: '첫 번째 슬라이드',
+                lastSlideMessage: '마지막 슬라이드',
+            },
+        });
+    </script>
+</body>
+</html>

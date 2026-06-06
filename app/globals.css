@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .curse-list > a {
+    @apply border-violet-200 bg-violet-100 text-violet-700 hover:border-violet-300;
+  }
+
+  .curse-list > a.curse-yellow {
+    @apply border-amber-200 bg-amber-100 text-amber-700 hover:border-amber-300;
+  }
+}
+

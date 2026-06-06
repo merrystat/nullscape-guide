@@ -1,4 +1,5 @@
 import SlideViewer from '@/components/SlideViewer'
+import FirstPage from '@/components/FirstPage'
 
 const slides = [
   {
@@ -26,7 +27,7 @@ const slides = [
 export default function AltarsPage() {
   return (
     <main className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">제단 활용법</h1>
+      <FirstPage title="제단 활용법" subtitle="제단 선택과 활용" icon="A" />
       <SlideViewer slides={slides} />
     </main>
   )

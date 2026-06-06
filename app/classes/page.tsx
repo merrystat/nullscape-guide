@@ -1,4 +1,5 @@
 import SlideViewer from '@/components/SlideViewer'
+import FirstPage from '@/components/FirstPage'
 
 const slides = [
   {
@@ -26,7 +27,7 @@ const slides = [
 export default function ClassesPage() {
   return (
     <main className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">클래스별 플레이 팁</h1>
+      <FirstPage title="클래스별 플레이 팁" subtitle="클래스별 특징과 팁" icon="K" />
       <SlideViewer slides={slides} />
     </main>
   )

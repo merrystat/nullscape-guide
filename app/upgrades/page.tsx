@@ -1,4 +1,5 @@
 import SlideViewer from '@/components/SlideViewer'
+import FirstPage from '@/components/FirstPage'
 
 const slides = [
   {
@@ -26,7 +27,7 @@ const slides = [
 export default function UpgradesPage() {
   return (
     <main className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">초반 업그레이드 우선순위</h1>
+      <FirstPage title="초반 업그레이드 우선순위" subtitle="초반 업그레이드 가이드" icon="U" />
       <SlideViewer slides={slides} />
     </main>
   )

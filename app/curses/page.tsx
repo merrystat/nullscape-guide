@@ -1,4 +1,5 @@
 import SlideViewer from '@/components/SlideViewer'
+import FirstPage from '@/components/FirstPage'
 
 const slides = [
   {
@@ -26,7 +27,7 @@ const slides = [
 export default function CursesPage() {
   return (
     <main className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">저주 선택 가이드</h1>
+      <FirstPage title="저주 선택 가이드" subtitle="저주 선택을 돕는 가이드" icon="C" />
       <SlideViewer slides={slides} />
     </main>
   )
