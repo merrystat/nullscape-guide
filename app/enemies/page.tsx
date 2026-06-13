@@ -1,5 +1,4 @@
 import SlideViewer from '@/components/SlideViewer'
-import EnemyLayout from '@/components/EnemyLayout'
 
 const slides = [
   {
@@ -91,10 +90,9 @@ const slides = [
 
 export default function EnemiesPage() {
   return (
-    <EnemyLayout title="적 대응법">
-      <div className="min-h-[40vh] p-4">
-        <SlideViewer slides={slides} />
-      </div>
-    </EnemyLayout>
+    <main className="min-h-screen p-8">
+      <h1 className="text-3xl font-bold text-center mb-8">적 대응법</h1>
+      <SlideViewer slides={slides} />
+    </main>
   )
 }
