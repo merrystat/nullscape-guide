@@ -26,7 +26,18 @@ export default function BabyPage() {
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
-                      <p className="mt-2 text-sm text-slate-700">Casual · Standard - 변화 없음 / Extreme - 두 번 연속 대시</p>
+                      <div className="mt-2 flex flex-col gap-2">
+                        <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                          <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
+                          <span className="text-slate-400">—</span>
+                          <span className="text-slate-700">변화 없음</span>
+                        </div>
+                        <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                          <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
+                          <span className="text-slate-400">—</span>
+                          <span className="text-slate-700">두 번 연속 대시</span>
+                        </div>
+                      </div>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>

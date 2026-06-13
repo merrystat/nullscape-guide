@@ -28,7 +28,18 @@ export default function ICBMPage() {
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
-                      <p className="mt-2 text-sm text-slate-700">Casual · Standard - 변화 없음 / Extreme - 플레이어 이동을 예측해 낙하 위치를 조정</p>
+                      <div className="mt-2 flex flex-col gap-2">
+                        <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                          <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
+                          <span className="text-slate-400">—</span>
+                          <span className="text-slate-700">변화 없음</span>
+                        </div>
+                        <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                          <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
+                          <span className="text-slate-400">—</span>
+                          <span className="text-slate-700">플레이어 이동을 예측해 낙하 위치를 조정</span>
+                        </div>
+                      </div>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
@@ -82,8 +93,6 @@ export default function ICBMPage() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
               <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 랜덤 플레이어 한 명을 락온합니다.</li>
-                <li>• 락온 후 2.5초 뒤 낙하가 시작됩니다.</li>
                 <li>• 낙하 위치는 한 번 정해지면 추가 조정 없이 떨어집니다.</li>
                 <li>• Extreme에서는 플레이어 이동을 예측해 위치를 조정합니다.</li>
                 <li>• 이후 약 5초 뒤 다시 락온하며, 솔로일 때 지연이 크게 늘어납니다.</li>
