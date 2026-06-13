@@ -3,7 +3,7 @@ import FirstPage from '@/components/FirstPage'
 
 const slides = [
   {
-    title: '저주 선택 가이드 - 소개',
+    title: '저주 선택 가이드 - 소개' ,
     content: 'Nullscape에서 저주 선택은 게임의 난이도와 플레이 스타일을 결정합니다. 이 가이드를 통해 최적의 저주를 선택하세요.',
   },
   {
