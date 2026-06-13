@@ -1,95 +1,98 @@
-﻿import PageNavArrows from '@/components/PageNavArrows'
+import SlideViewer from '@/components/SlideViewer'
+
+const slides = [
+  {
+    title: 'Bell',
+    content:
+      '생김새: 금속 종 형태.\n특징: 플레이어 주변에 순간이동하며 닿으면 울리고 시야를 방해함.\n대응: 거리 유지하고 울림 전 위치를 피함. 필요 시 Flesh 정화용으로 활용.\n팁: 특정 저주 조합에서 위험도가 변하니 상황 판단 필요.',
+  },
+  {
+    title: 'Baby',
+    content:
+      '생김새: 분홍색 아기 마스크를 쓴 작은 유닛.\n특징: 돌진 전 빨간 표시선과 경고음 발생.\n대응: 표시선을 보고 옆으로 회피하거나 점프로 벗어남. 원하지 않으면 2개 이상 획득 피하기.\n팁: 두 개 이상 획득하면 Voidbound Baby가 추가됩니다.',
+  },
+  {
+    title: 'Husk',
+    content:
+      '생김새: 플레이어를 닮은 보라색 형체.\n특징: 플레이어 움직임을 지연하여 따라옴. 스폰 타이밍 주의 필요.\n대응: 역행(뒤로 걷기)을 피하고 점프로 회피. 처음엔 움직임을 멈춰 스폰 타이밍 조정.\n팁: 긴 경로 확보하면 안전합니다.',
+  },
+  {
+    title: 'ICBM',
+    content:
+      '생김새: 미사일 모양의 발사체.\n특징: 락 소리와 함께 특정 지점 락온. 예상 폭발 지점에서 이동으로 피하기 가능.\n대응: 낙하 예상 지점에서 벗어남. 이동으로 낙하지점 조정 가능.\n팁: 폭발 반경을 팀에 공유하여 분산.',
+  },
+  {
+    title: 'Mart',
+    content:
+      '생김새: 파란색 슬라임 같은 작은 덩어리.\n특징: 다른 Mart와 충돌하면 합쳐져 더 커지고 빨라짐.\n대응: 합쳐지지 않도록 분산 관리. 소리로 위치 파악.\n팁: 초기에 관리하면 나중의 위협도를 줄일 수 있습니다.',
+  },
+  {
+    title: 'Springer',
+    content:
+      '생김새: 체스 기사말 모양의 유닛.\n특징: 무작위 타일로 점프하며 착지 시 충격파 발생. 착지 지점이 빨간 십자가로 표시됨.\n대응: 충격파가 발생하기 전 점프로 회피. 장애물을 이용한 회피도 가능.\n팁: Charger나 Diver 클래스는 충격파 방향에 주의. Grace Wings 획득 권장.',
+  },
+  {
+    title: 'Flesh',
+    content:
+      '생김새: 살덩어리 형태의 대형 적.\n특징: 주변 타일을 감염시키고 감염 상태에서 이동·능력 제한 발생.\n대응: 감염 타일 피하기. 감염 전 경로 확보. Bell로 정화 가능.\n팁: 감염 상태에서는 능력 사용이 제한되므로 예방이 중요합니다.',
+  },
+  {
+    title: 'Operator',
+    content:
+      '생김새: 신호등 같은 얼굴(초록·노랑·빨강)을 가진 코트 차림.\n특징: 플레이어가 3초간 입력하지 않으면 사라지고, 계속 입력하면 활성화됨.\n대응: Operator 출현 시 즉시 입력을 멈춰 제자리에서 정지.\n팁: 안전한 위치에서 멈추는 것이 중요합니다.',
+  },
+  {
+    title: 'Guardian',
+    content:
+      '생김새: 핑크색 해골에 꽃 장식이 있는 형태.\n특징: 근처로 이동한 후 다양한 방향으로 활동 개시.\n대응: 거리 유지하며 회피. 속도 업그레이드로 회피 시간 확보.\n팁: Zoom out으로 주변을 조기에 파악하세요.',
+  },
+  {
+    title: 'Telefragger',
+    content:
+      '생김새: 짙은 회색 스틱맨형.\n특징: 목표 플레이어 앞에 주기적으로 순간이동. 순간이동 전 소리와 표식 발생.\n대응: 소리/표시로 대비. 순간이동 직후 무방비 타이밍 활용.\n팁: 이동 클래스 능력 남용 주의.',
+  },
+  {
+    title: 'Kolóna',
+    content:
+      '생김새: 기둥 또는 컬럼 형태의 유닛.\n특징: 지역 제어 및 광역 활동 성향.\n대응: 범위 파악 후 바깥에서 견제. 방패나 커버 활용하여 안전하게 접근.\n팁: 패턴을 파악하면 안전거리 확보로 처리 가능합니다.',
+  },
+  {
+    title: 'Voidbound Baby',
+    content:
+      '생김새: Baby의 어두운 변종(뾰족한 뿔 등).\n특징: Baby보다 훨씬 빠르고 돌진 거리가 길며 인디케이터가 빨리 사라짐.\n대응: 빠른 반응으로 회피. 스트래이핑(좌우 움직임) 활용.\n팁: 시각 표시에 더 의존해야 합니다.',
+  },
+  {
+    title: 'Cadence',
+    content:
+      '생김새: 악기 요소가 결합된 시계 모양.\n특징: 악기를 맵에 생성. 일정 시간 후 분노하기 시작.\n대응: 악기를 우선 회수·파괴. 팀 분업으로 회수 담당 지정.\n팁: 악기가 많을수록 타이머가 빨라지니 신속 수거 중요.',
+  },
+  {
+    title: 'Sigil',
+    content:
+      '생김새: 별 모양의 노란-주황 색 룬 개체.\n특징: 플레이어를 락온한 뒤 지속 추적 레이저 발사.\n대응: 락온되면 원을 그리며 회피. 타겟과 다른 위치로 이동하여 아군 피해 최소화.\n팁: 근처 아군에게 위치 알리기.',
+  },
+  {
+    title: 'Voidbreaker',
+    content:
+      '생김새: 보이드풍 기사 이미지, 검과 갑옷 차림.\n특징: 주변에 검을 소환 후 발사 형태로 활동.\n대응: 검의 발사 방향 예측하여 회피. 수평 회피 필수(점프 불가).\n팁: 보이드 속성으로 위험도 높음. 우선 처리 권장.',
+  },
+  {
+    title: 'Voidbound Guardian',
+    content:
+      '생김새: Guardian의 어두운 보이드 변종(보라색 덩굴과 부식된 외형).\n특징: 더 빠르고 큰 활동. 표면 접촉 시 범위 피해 확장.\n대응: 빠른 회피와 속도 업그레이드로 안전거리 확보. 집단전에서 주의 필요.\n팁: 위협도 높으니 우선순위로 처리하세요.',
+  },
+  {
+    title: 'Scrapmaw',
+    content:
+      '생김새: 기차 같은 긴 뱀 형태, 금속 기어와 주황색 네온 부분 장식.\n특징: 20-30초마다 돌진하며 기적소리와 주황색 빔으로 표시. 돌진 후 평행한 레이저 줄 발사.\n대응: 돌진 시 플레이어 쪽에서 멀어지기. 레이저는 충분한 속도로 범위 벗어나거나 수직 회피.\n팁: 점프 낭비 금지. 속도 업그레이드 있으면 레이저 범위 탈출 가능.',
+  },
+]
 
 export default function EnemiesPage() {
   return (
-    <main className="min-h-screen bg-slate-50 p-8">
-      <div className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
-        <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Bell</h1>
-
-        <div className="grid gap-8">
-          <article className="space-y-6">
-            <div className="rounded-3xl border border-slate-200 bg-slate-100 p-8 shadow-sm">
-              <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
-                <div>
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
-                      <h2 className="text-4xl font-bold text-slate-900">Bell</h2>
-                    </div>
-                    <div className="rounded-3xl bg-emerald-500/10 px-4 py-2 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-200">
-                      난이도: 1
-                    </div>
-                  </div>
-
-                  <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">최소 레벨 1 도달</p>
-                    </div>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
-                      <p className="mt-2 text-sm text-slate-700">Casual · Standard - 변화 없음 / Extreme - 즉시 순간이동</p>
-                    </div>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
-                      <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
-                        <a href="/curses" className="rounded-2xl border border-slate-200 bg-slate-100 p-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300">공명 충격파</a>
-                        <a href="/curses" className="rounded-2xl border border-slate-200 bg-slate-100 p-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300">강력한 종</a>
-                        <a href="/curses" className="rounded-2xl border border-slate-200 bg-slate-100 p-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300">더 많은 울림</a>
-                        <a href="/curses" className="rounded-2xl border border-slate-200 bg-slate-100 p-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300">뇌진탕</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-4 flex justify-between">
-                    <div />
-                    <a href="/enemies/baby" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      Baby 페이지 →
-                    </a>
-                  </div>
-                </div>
-
-                <div className="rounded-3xl border border-slate-200 bg-white p-6">
-                  <div className="aspect-[4/3] rounded-3xl border border-slate-200 bg-slate-50 text-slate-500 flex items-center justify-center text-center p-4">
-                    <span className="text-sm">Bell 이미지 자리</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 space-y-4 text-slate-700">
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">외형</p>
-                  <p className="mt-2">금속 종 형태의 적입니다.</p>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">플레이어 주변으로 순간이동하며, 접촉 시 위로 튕겨 올리고 짧은 시간 동안 시야를 방해합니다. 연속으로 4번 울리면 즉사하며, Flesh 효과를 제거합니다.</p>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">가급적 접촉을 피하고, 순간이동 위치를 빠르게 파악해 거리를 벌리세요.</p>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">비교적 안전하므로 필요할 때 울려 점프패드처럼 사용하거나 Flesh 효과 제거 용도로 활용할 수 있습니다.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 순간이동 위치를 파악하면 공격을 피하기 쉽습니다.</li>
-                <li>• 연속으로 4번 울리면 즉사하므로 빠르게 거리를 벌리세요.</li>
-                <li>• Flesh 효과 제거 용도로 활용할 수 있습니다.</li>
-              </ul>
-            </div>
-            <PageNavArrows />
-          </article>
-        </div>
-      </div>
+    <main className="min-h-screen p-8">
+      <h1 className="text-3xl font-bold text-center mb-8">적 대응법</h1>
+      <SlideViewer slides={slides} />
     </main>
   )
 }
