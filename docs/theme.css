@@ -1,0 +1,140 @@
+/* =============================================
+   Nullscape Visual Guide — Dark Void Theme
+   ============================================= */
+
+/* ── Subtle checkerboard body (game floor reference) ── */
+body {
+  background-color: #07040d;
+  background-image: repeating-conic-gradient(#0d0919 0% 25%, #07040d 0% 50%);
+  background-size: 36px 36px;
+  color: #ede0ff;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #07040d; }
+::-webkit-scrollbar-thumb { background: #3d2060; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #7c3aed; }
+
+/* ── Selection ── */
+::selection { background: rgba(157, 78, 221, 0.35); color: #f0e4ff; }
+
+/* ── Backgrounds ── */
+.bg-slate-50  { background-color: #07040d !important; }
+.bg-white     { background-color: #0e0b1e !important; }
+.bg-slate-100 { background-color: #150e28 !important; }
+
+/* Inner small cards (compound selector to distinguish from page bg) */
+.rounded-xl.bg-slate-50,
+.rounded-3xl.bg-slate-50 { background-color: #0c0918 !important; }
+
+/* ── Borders ── */
+.border-slate-200 { border-color: #261840 !important; }
+
+/* ── Text ── */
+.text-slate-900 { color: #f0e4ff !important; }
+.text-slate-700 { color: #c4aee8 !important; }
+.text-slate-600 { color: #a090c8 !important; }
+.text-slate-500 { color: #7a6a9a !important; }
+.text-slate-400 { color: #6a5888 !important; }
+.text-emerald-700 { color: #34d399 !important; }
+.text-amber-700   { color: #fbbf24 !important; }
+.text-red-700     { color: #f87171 !important; }
+.text-sky-700     { color: #e040fb !important; }
+
+/* ── Headings glow ── */
+h1 {
+  color: #f0e4ff !important;
+  text-shadow: 0 0 40px rgba(217, 70, 239, 0.6), 0 0 90px rgba(157, 78, 221, 0.25);
+}
+h2 { color: #f0e4ff !important; }
+
+/* ── Shadows ── */
+.shadow-xl {
+  box-shadow:
+    0 0 0 1px rgba(157, 78, 221, 0.22),
+    0 0 80px rgba(157, 78, 221, 0.08),
+    0 25px 80px rgba(0,0,0,0.85) !important;
+}
+.shadow-md {
+  box-shadow:
+    0 0 0 1px rgba(157, 78, 221, 0.15),
+    0 0 30px rgba(157, 78, 221, 0.06),
+    0 4px 24px rgba(0,0,0,0.55) !important;
+}
+.shadow-sm {
+  box-shadow: 0 0 16px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+.shadow-lg {
+  box-shadow:
+    0 0 0 1px rgba(157, 78, 221, 0.12),
+    0 10px 40px rgba(0,0,0,0.6) !important;
+}
+
+/* ── Pink gradient buttons (nav + icon circle) ── */
+.bg-slate-900 {
+  background: linear-gradient(135deg, #7c3aed 0%, #c026d3 100%) !important;
+  box-shadow: 0 0 18px rgba(192, 38, 211, 0.35) !important;
+}
+.hover\:bg-slate-800:hover {
+  background: linear-gradient(135deg, #9333ea 0%, #d946ef 100%) !important;
+  box-shadow: 0 0 28px rgba(217, 70, 239, 0.5) !important;
+}
+
+/* ── Home nav cards ── */
+.hover\:border-slate-300:hover {
+  border-color: #9333ea !important;
+  box-shadow: 0 0 18px rgba(147, 51, 234, 0.2) !important;
+}
+
+/* ── Difficulty badge backgrounds ── */
+.bg-emerald-500\/10 { background-color: rgba(16, 185, 129, 0.1) !important; }
+.bg-amber-500\/10   { background-color: rgba(245, 158, 11,  0.1) !important; }
+.bg-red-500\/10     { background-color: rgba(239, 68,  68,  0.1) !important; }
+.bg-sky-500\/10     { background-color: rgba(224, 64,  251, 0.1) !important; }
+.ring-emerald-200 { --tw-ring-color: rgba(16,  185, 129, 0.4) !important; }
+.ring-amber-200   { --tw-ring-color: rgba(245, 158, 11,  0.4) !important; }
+.ring-red-200     { --tw-ring-color: rgba(239, 68,  68,  0.4) !important; }
+.ring-sky-200     { --tw-ring-color: rgba(224, 64,  251, 0.4) !important; }
+
+/* ── Curse list links ── */
+.curse-list > a {
+  border-color: #3d1f60 !important;
+  background-color: #180c2e !important;
+  color: #c084fc !important;
+}
+.curse-list > a:hover {
+  border-color: #7c3aed !important;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3) !important;
+}
+.curse-list > a.curse-yellow {
+  border-color: #5a3600 !important;
+  background-color: #1c1000 !important;
+  color: #fbbf24 !important;
+}
+.curse-list > a.curse-yellow:hover {
+  border-color: #d97706 !important;
+  box-shadow: 0 0 12px rgba(217, 119, 6, 0.3) !important;
+}
+
+/* ── Swiper ── */
+.swiper-slide { background: #0e0b1e !important; }
+.swiper-button-next,
+.swiper-button-prev { color: #e040fb !important; }
+.swiper-pagination-bullet {
+  background: #7c3aed !important;
+  opacity: 0.45 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #e040fb !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 10px rgba(224, 64, 251, 0.65);
+}
+
+/* ── "메뉴로 돌아가기" slide button ── */
+.border-gray-300 { border-color: #3d1f60 !important; }
+.text-gray-700   { color: #c084fc !important; }
+.hover\:bg-gray-50:hover { background-color: #1a1030 !important; }
+
+/* ── Transitions ── */
+a { transition: box-shadow 0.15s ease, border-color 0.15s ease; }
