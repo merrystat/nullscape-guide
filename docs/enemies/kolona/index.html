@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolóna - Nullscape Visual Guide</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+.curse-list > a { border-color: #ddd6fe; background-color: #ede9fe; color: #6d28d9; }
+.curse-list > a:hover { border-color: #c4b5fd; }
+.curse-list > a.curse-yellow { border-color: #fde68a; background-color: #fef3c7; color: #b45309; }
+.curse-list > a.curse-yellow:hover { border-color: #fcd34d; }
+</style>
+</head>
+<body class="min-h-screen bg-slate-50 p-8">
+  <div class="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
+    <h1 class="text-4xl font-bold text-slate-900 mb-8 text-center">Kolóna</h1>
+    <div class="grid gap-8">
+      <article class="space-y-6">
+        <div class="rounded-3xl border border-slate-200 bg-slate-100 p-8 shadow-sm">
+          <div class="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
+            <div>
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p class="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
+                  <h2 class="text-4xl font-bold text-slate-900">Kolóna</h2>
+                </div>
+                <div class="rounded-3xl bg-sky-500/10 px-4 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200">클라이언트 전용</div>
+              </div>
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                  <p class="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
+                  <p class="mt-2 text-sm text-slate-700">최소 레벨 10 도달</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                  <p class="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
+                  <div class="mt-2 flex flex-col gap-2">
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                      <span class="font-semibold text-slate-500 shrink-0">Casual</span>
+                      <span class="text-slate-400">—</span>
+                      <span class="text-slate-700">숫자 범위 8~10</span>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                      <span class="font-semibold text-slate-500 shrink-0">Standard · Extreme</span>
+                      <span class="text-slate-400">—</span>
+                      <span class="text-slate-700">숫자 범위 5~15</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                  <p class="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
+                  <div class="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
+                    <a href="../../curses/" class="rounded-2xl border p-3 text-center text-sm font-medium transition">불타는 꽃다발</a>
+                    <a href="../../curses/" class="rounded-2xl border p-3 text-center text-sm font-medium transition curse-yellow">잃어버린 불씨</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 flex justify-between">
+                <a href="../telefragger/" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">← Telefragger 페이지</a>
+                <div></div>
+              </div>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-6">
+              <div class="aspect-[4/3] rounded-3xl border border-slate-200 bg-slate-50 text-slate-500 flex items-center justify-center text-center p-4">
+                <span class="text-sm">Kolóna 이미지 자리</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 space-y-4 text-slate-700">
+            <div>
+              <p class="text-sm font-semibold text-slate-900">외형</p>
+              <p class="mt-2">선명한 3개의 눈을 가진 불꽃 형태의 적으로, 뒤에 기둥(Pillar)과 화환(Wreath)이 있습니다. 카운트가 시작되면 화면 왼쪽에 나타나며, 카운트마다 기둥이 조금씩 시계 방향으로 회전합니다.</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-900">특징</p>
+              <p class="mt-2">무작위로 활성화되어 화면에 목표 숫자를 잠시 표시한 뒤 1부터 카운트를 시작합니다. 카운트가 처음 보여준 목표 숫자에 도달했을 때 어빌리티를 사용하고 있으면 Kolóna가 사라집니다. 실패 시 화환이 빨간색으로 변하고 기둥이 빠르게 회전하다가 잠시 후 플레이어를 처치합니다. 목표 숫자 이전에 미리 어빌리티를 사용해도, 목표 숫자 표시 시점에 어빌리티가 활성 상태면 성공으로 인정됩니다. Prisoner 클래스는 어빌리티가 없어 Kolóna가 등장하지 않습니다. Flesh에 감염되면 Kolóna가 살점으로 덮이며 타이머가 일시 정지됩니다.</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-900">회피법</p>
+              <p class="mt-2">처음 표시된 목표 숫자를 기억한 뒤, 카운트가 그 숫자에 도달하는 순간 어빌리티를 사용하세요. 숫자를 놓쳤다면 5 이후 매 카운트마다 어빌리티를 준비하세요. 최솟값이 5이므로 이 방법으로 생존을 보장할 수 있습니다.</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-900">팁</p>
+              <p class="mt-2">기둥은 매 카운트마다 22.5°씩 회전하므로 기둥 각도로 현재 카운트를 역산할 수 있습니다. 설정에서 '중앙 적 표시(Centered Enemies)' 옵션을 켜면 목표 숫자가 화면 중앙에 크게 표시되어 인식이 훨씬 쉬워집니다(카운트 중에는 Kolóna 위치로 돌아옴). Medal 획득 시 해당 라운드에서 Kolóna가 더 이상 등장하지 않습니다.</p>
+            </div>
+          </div>
+
+          <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="text-sm font-semibold text-slate-900 mb-3">클래스별 대응법</p>
+            <div class="grid gap-2 sm:grid-cols-2 text-sm text-slate-700">
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Charger</span><span class="text-slate-400">—</span><span>퀵 드롭으로 어빌리티 체크 통과 가능</span></div>
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Diver</span><span class="text-slate-400">—</span><span>짧게 잠수 후 즉시 취소로 이동 흐름 유지</span></div>
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Grappler</span><span class="text-slate-400">—</span><span>지면에 짧게 그래플해 체크 통과</span></div>
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Glider</span><span class="text-slate-400">—</span><span>지면에서 어빌리티 단기 사용, 빠른 스팸 가능</span></div>
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Wanted</span><span class="text-slate-400">—</span><span>어빌리티 사용 쉬우나 운동량이 완전히 멈춤</span></div>
+              <div class="rounded-xl bg-slate-50 px-3 py-2 flex gap-2"><span class="font-semibold text-slate-500 shrink-0">Spirit</span><span class="text-slate-400">—</span><span>유령 폼 종료 타이밍에 패링 가능(권장하지 않음)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+          <p class="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
+          <ul class="mt-4 space-y-3 text-slate-700">
+            <li>• Kolóna는 기존 적 Kookoo의 대체 적으로, Patch 5에서 도입되었습니다.</li>
+            <li>• Kookoo의 숫자 범위가 8~12였던 것에 비해 Kolóna는 5~15로 범위가 넓습니다.</li>
+            <li>• Kolóna는 그리스어·슬로바키아어로 '기둥'을 의미하며, 설계에 기둥이 포함된 이유입니다.</li>
+            <li>• Medal 획득 시 해당 라운드에서 Kolóna가 등장하지 않습니다. 이미 활성화된 상태에서 Medal을 얻으면 카운트 속도가 크게 빨라지지만 목표 숫자에 도달해도 처치하지 않습니다.</li>
+            <li>• Lost Embers 저주 적용 시 카운트 중 현재 숫자가 표시되지 않습니다. 기둥 각도로 카운트를 파악해야 합니다.</li>
+            <li>• Flesh에 감염되어 타이머를 의도적으로 멈추는 것은 가능하나, 숫자를 기억하는 것이 더 권장됩니다.</li>
+            <li>• Kolóna는 Global Kills 영역에 전적판이 없습니다.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+          <p class="text-sm uppercase tracking-[0.25em] text-slate-500">관련 저주 상세</p>
+          <div class="mt-4 space-y-3 text-slate-700">
+            <div class="rounded-2xl border border-violet-200 bg-violet-50 p-4">
+              <p class="text-sm font-semibold text-violet-900">불타는 꽃다발 (Burning Bouquet)</p>
+              <p class="mt-1 text-sm">"Kolóna가 Razorbloom을 불러들입니다." — Kolóna가 등장하면 Razorbloom도 즉시 함께 등장합니다.</p>
+            </div>
+            <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+              <p class="text-sm font-semibold text-amber-900">잃어버린 불씨 (Lost Embers)</p>
+              <p class="mt-1 text-sm">"Kolóna가 카운트 중 숫자를 더 이상 표시하지 않습니다. 주의하세요." — 기둥 각도와 회전 속도로 카운트를 파악해야 합니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
