@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>저주 선택 가이드 - Nullscape Visual Guide</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+.swiper { height: 384px; }
+.swiper-slide { background: white; border-radius: 0.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; position: relative; box-shadow: 0 10px 15px -3px rgb(0 0 0/.1),0 4px 6px -4px rgb(0 0 0/.1); }
+</style>
+</head>
+<body class="min-h-screen p-8">
+  <div class="mx-auto max-w-4xl">
+    <header class="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-md">
+      <div class="flex items-center gap-6">
+        <div class="flex h-24 w-24 items-center justify-center rounded-full bg-slate-900 text-4xl font-black text-white">C</div>
+        <div class="flex-1">
+          <h1 class="text-2xl font-bold text-slate-900">저주 선택 가이드</h1>
+          <p class="mt-1 text-sm text-slate-600">저주 선택을 돕는 가이드</p>
+        </div>
+      </div>
+    </header>
+    <div class="w-full max-w-4xl mx-auto">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="../" class="absolute right-4 top-4 rounded-full border border-gray-300 bg-white px-3 py-1 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50">메뉴로 돌아가기</a>
+            <h2 class="text-2xl font-bold mb-4">저주 선택 가이드 - 소개</h2>
+            <p class="text-center">Nullscape에서 저주 선택은 게임의 난이도와 플레이 스타일을 결정합니다. 이 가이드를 통해 최적의 저주를 선택하세요.</p>
+          </div>
+          <div class="swiper-slide">
+            <a href="../" class="absolute right-4 top-4 rounded-full border border-gray-300 bg-white px-3 py-1 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50">메뉴로 돌아가기</a>
+            <h2 class="text-2xl font-bold mb-4">저주 유형 1: 공격형</h2>
+            <p class="text-center">공격력을 높이는 저주. 빠른 클리어를 원한다면 추천.</p>
+          </div>
+          <div class="swiper-slide">
+            <a href="../" class="absolute right-4 top-4 rounded-full border border-gray-300 bg-white px-3 py-1 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50">메뉴로 돌아가기</a>
+            <h2 class="text-2xl font-bold mb-4">저주 유형 2: 방어형</h2>
+            <p class="text-center">체력과 방어력을 높이는 저주. 생존에 초점을 맞춘 플레이어에게 적합.</p>
+          </div>
+          <div class="swiper-slide">
+            <a href="../" class="absolute right-4 top-4 rounded-full border border-gray-300 bg-white px-3 py-1 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50">메뉴로 돌아가기</a>
+            <h2 class="text-2xl font-bold mb-4">저주 유형 3: 유틸리티형</h2>
+            <p class="text-center">이동속도나 회복력을 높이는 저주. 전략적인 플레이를 즐기는 분에게.</p>
+          </div>
+          <div class="swiper-slide">
+            <a href="../" class="absolute right-4 top-4 rounded-full border border-gray-300 bg-white px-3 py-1 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50">메뉴로 돌아가기</a>
+            <h2 class="text-2xl font-bold mb-4">결론</h2>
+            <p class="text-center">자신의 플레이 스타일에 맞는 저주를 선택하세요. 게임을 즐기면서 최적의 선택을 하세요!</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.mySwiper', {
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+  </script>
+</body>
+</html>
