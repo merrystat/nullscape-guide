@@ -1,8 +1,8 @@
-export default function BabyPage() {
+export default function VoidboundBabyPage() {
   return (
     <main className="min-h-screen bg-slate-50 p-8">
       <div className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
-        <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Baby</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Voidbound Baby</h1>
 
         <div className="grid gap-8">
           <article className="space-y-6">
@@ -12,17 +12,17 @@ export default function BabyPage() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                     <div>
                       <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
-                      <h2 className="text-4xl font-bold text-slate-900">Baby</h2>
+                      <h2 className="text-4xl font-bold text-slate-900">Voidbound Baby</h2>
                     </div>
-                    <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
-                      난이도: 2
+                    <div className="rounded-3xl bg-red-500/10 px-4 py-2 text-sm font-semibold text-red-700 ring-1 ring-red-200">
+                      난이도: 3
                     </div>
                   </div>
 
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">최소 레벨 1 도달</p>
+                      <p className="mt-2 text-sm text-slate-700">레벨 10 이상, Baby 2마리 선택 시 등장</p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
@@ -30,12 +30,12 @@ export default function BabyPage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">변화 없음</span>
+                          <span className="text-slate-700">한 번 대시</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">두 번 연속 대시</span>
+                          <span className="text-slate-700">두 번 대시, 두 번째 경로는 첫 대시 직후 결정</span>
                         </div>
                       </div>
                     </div>
@@ -43,29 +43,25 @@ export default function BabyPage() {
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">문제아</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition curse-yellow">떼쓰기</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">떼쓰기</a>
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">고무젖꼭지</a>
                       </div>
                     </div>
                   </div>
+
                   <div className="mt-4 flex justify-between">
-                    <a href="/enemies" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      ← Bell 페이지
+                    <a href="/enemies/baby" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      ← Baby 페이지
                     </a>
-                    <div className="flex gap-2">
-                      <a href="/enemies/voidbound-baby" className="inline-flex items-center gap-2 rounded-full bg-slate-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                        Voidbound Baby 페이지
-                      </a>
-                      <a href="/enemies/husk" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                        Husk 페이지 →
-                      </a>
-                    </div>
+                    <a href="/enemies/husk" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      Husk 페이지 →
+                    </a>
                   </div>
                 </div>
 
                 <div className="rounded-3xl border border-slate-200 bg-white p-6">
                   <div className="aspect-[4/3] rounded-3xl border border-slate-200 bg-slate-50 text-slate-500 flex items-center justify-center text-center p-4">
-                    <span className="text-sm">Baby 이미지 자리</span>
+                    <span className="text-sm">Voidbound Baby 이미지 자리</span>
                   </div>
                 </div>
               </div>
@@ -73,22 +69,19 @@ export default function BabyPage() {
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
                   <p className="text-sm font-semibold text-slate-900">외형</p>
-                  <p className="mt-2">아기 가면을 쓴 해골 같은 적입니다.</p>
+                  <p className="mt-2">Baby의 어두운 변종으로 보라색 빛과 뾰족한 뿔, 날카로운 이를 가집니다.</p>
                 </div>
-
                 <div>
                   <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">가장 가까운 플레이어를 향해 직선으로 대시합니다. 돌진 전 빨간 점선으로 경고하며, 공격 시 크게 울면서 물어옵니다. Extreme에서는 두 번 연속으로 대시합니다.</p>
+                  <p className="mt-2">Baby와 비슷한 행동을 하지만 더 빠르고 더 긴 대시를 합니다. 돌진 음성이 더 작고 대시 표시가 빠르게 사라집니다.</p>
                 </div>
-
                 <div>
                   <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">대시 경로에서 빠르게 벗어나세요. 베이비는 대시를 끝낸 후 멈춘 상태에서도 위험하므로 빠르게 벗어나기만 하세요.</p>
+                  <p className="mt-2">대시 표시를 보고 빠르게 옆으로 피하세요. 대시 이후 위치 예측이 어려우므로 가능한 한 멀리 떨어져야 합니다.</p>
                 </div>
-
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">가장 가까운 플레이어를 향하기 때문에 다른 플레이어 쪽으로 유도하거나, 이동속도 증가기를 활용해 피하는 것이 좋습니다. 히트박스가 작아서 약간만 떨어져도 안전합니다.</p>
+                  <p className="mt-2">오디오 큐가 Baby보다 약간 더 약하므로 시각 표시와 움직임을 더 신경 쓰세요.</p>
                 </div>
               </div>
             </div>
@@ -96,11 +89,10 @@ export default function BabyPage() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
               <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 대시는 항상 직선이며, 빨간 점선으로 공격 위치를 미리 보여줍니다.</li>
-                <li>• Extreme에서 두 번 연속 대시하므로 거리 유지가 중요합니다.</li>
-                <li>• Baby는 가까운 플레이어를 우선 타겟으로 삼습니다.</li>
-                <li>• 가능한 나중에 선택하세요.</li>
-                <li>• 2마리 이상 선택되면 이후 Voidbound Baby가 선택 가능해집니다.</li>
+                <li>• Baby의 Voidbound 변종으로 대시 빈도와 거리 증가.</li>
+                <li>• 표시가 빨리 사라져서 추적이 더 어렵습니다.</li>
+                <li>• 대시 소리가 더 작아 청각 의존도가 떨어집니다.</li>
+                <li>• 2마리 이상의 Baby를 선택 시 등장 확률이 생깁니다.</li>
               </ul>
             </div>
           </article>
