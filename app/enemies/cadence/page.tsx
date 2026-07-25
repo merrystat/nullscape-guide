@@ -48,8 +48,8 @@ export default function CadencePage() {
                   </div>
 
                   <div className="mt-4 flex justify-between">
-                    <a href="/enemies" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      ← Bell 페이지
+                    <a href="/enemies/kolona" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      ← Kolona 페이지
                     </a>
                     <a href="/enemies/baby" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       Baby 페이지 →
