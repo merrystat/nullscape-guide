@@ -43,7 +43,6 @@ export default function VoidboundBabyPage() {
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">문제아</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">떼쓰기</a>
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">고무젖꼭지</a>
                       </div>
                     </div>
@@ -92,7 +91,7 @@ export default function VoidboundBabyPage() {
                 <li>• Baby의 Voidbound 변종으로 대시 빈도와 거리 증가.</li>
                 <li>• 표시가 빨리 사라져서 추적이 더 어렵습니다.</li>
                 <li>• 대시 소리가 더 작아 청각 의존도가 떨어집니다.</li>
-                <li>• 2마리 이상의 Baby를 선택 시 등장 확률이 생깁니다.</li>
+
               </ul>
             </div>
           </article>
