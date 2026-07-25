@@ -14,7 +14,7 @@ export default function KolonaPage() {
                       <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
                       <h2 className="text-4xl font-bold text-slate-900">Kolóna</h2>
                     </div>
-                    <div className="rounded-3xl bg-sky-500/10 px-4 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200">
+                    <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
                       난이도: 2
                     </div>
                   </div>
@@ -43,7 +43,7 @@ export default function KolonaPage() {
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">불타는 꽃다발</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition curse-yellow">잃어버린 불씨</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">잃어버린 불씨</a>
                       </div>
                     </div>
                   </div>
@@ -89,8 +89,7 @@ export default function KolonaPage() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
               <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Patch 5에서 Kookoo의 대체 적으로 도입되었습니다. (Kookoo 범위 8~12 → Kolóna 범위 5~15)</li>
-                <li>• Medal 획득 시 해당 라운드에서 더 이상 등장하지 않습니다.</li>
+                    <li>• Medal 획득 시 해당 라운드에서 더 이상 등장하지 않습니다.</li>
                 <li>• Lost Embers 저주 적용 시 카운트 중 현재 숫자가 표시되지 않습니다.</li>
                 <li>• Kolóna는 그리스어·슬로바키아어로 '기둥'을 의미합니다.</li>
               </ul>
