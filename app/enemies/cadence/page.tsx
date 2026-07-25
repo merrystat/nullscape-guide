@@ -15,7 +15,7 @@ export default function CadencePage() {
                       <h2 className="text-4xl font-bold text-slate-900">Cadence</h2>
                     </div>
                     <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
-                      난이도: 2
+                      난이도: 3
                     </div>
                   </div>
 
@@ -30,21 +30,19 @@ export default function CadencePage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">악기 2개 이상일 때만 타이머가 감소</span>
+                          <span className="text-slate-700">변화 없음</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">악기 1개만 있어도 타이머 감소, 분노 시 속도 130 studs/s</span>
+                          <span className="text-slate-700">분노 시 속도 증가</span>
                         </div>
                       </div>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">리듬의 무게</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">박자 흐트러짐</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">시간 끌기</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">죽음의 멜로디</a>
                       </div>
                     </div>
                   </div>
@@ -73,7 +71,7 @@ export default function CadencePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">패시브 상태에서 악기가 주기적으로 생성됩니다. 악기가 2개 이상 있을 때 타이머가 감소하며, 타이머가 만료되면 분노하여 가장 가까운 플레이어를 추격합니다.</p>
+                  <p className="mt-2">항상 자신 근처에 악기가 생성됩니다. 악기가 생성될 때 Cadence와 악기가 검은 줄로 연결됩니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">회피법</p>
@@ -89,10 +87,6 @@ export default function CadencePage() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
               <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Cadence는 패시브 상태에서 1마리만 등장합니다. Extreme에서도 기본 한계는 1마리입니다.</li>
-                <li>• Trap Card 또는 레벨 50에서 ??? 대신 선택하면 1마리 제한을 우회할 수 있습니다.</li>
-                <li>• 패시브 상태에서는 이동이나 처치가 불가능하며, 꾸준히 똑딱거리는 소리가 들립니다.</li>
-                <li>• 악기 2개 이상이 남아 있으면 타이머가 감소하고, 1개 또는 0개일 때는 증가합니다.</li>
                 <li>• 타이머 만료 시 분노 상태가 되며, 악기는 더 이상 생성되지 않습니다.</li>
                 <li>• 플레이어를 처치하면 잠시 멈춘 뒤 다음 목표를 추적합니다.</li>
                 <li>• Extreme에서는 분노 상태 속도가 130 studs/s로 증가합니다.</li>
