@@ -68,30 +68,20 @@ export default function CadencePage() {
 
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">설명</p>
-                  <p className="mt-2">Cadence는 레벨 15부터 등장하는 패시브 적입니다. 평상시에는 덩굴로 가려진 시계 안에 숨겨져 있고, 양옆에 쇠사슬이 늘어져 있습니다. 분노하면 시계가 깨지며 검은 연기와 4개의 검은 손이 나타나고, 위아래 이빨 사이로 큰 눈인 Cadence가 드러납니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">외형</p>
+                  <p className="mt-2">덩굴로 덮인 시계 안에 숨겨진 적입니다. 분노하면 시계가 깨지고 검은 연기와 4개의 손, 그리고 큰 눈이 드러납니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">행동</p>
-                  <p className="mt-2">패시브 상태에서는 움직이지 않으며 플레이어를 죽일 수 없습니다. 25초마다 하나의 악기가 플레이어 근처에 무작위로 생성됩니다. 악기는 생성 지점에서 소리를 내며, 악기와 Cadence를 검은 전기 줄이 연결합니다.</p>
-                  <p className="mt-2">악기가 2개 이상 남아 있으면 타이머가 감소하고, 그렇지 않으면 증가합니다. Solo에서는 타이머가 50초에서 최대화됩니다.</p>
-                  <p className="mt-2">타이머가 끝나면 Cadence가 분노하여 가장 가까운 플레이어를 80 studs/s로 쫓아 죽입니다. 분노 상태에서는 악기가 생성되지 않으며, 플레이어를 처치하면 잠시 멈춘 뒤 다음 목표를 추적합니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">특징</p>
+                  <p className="mt-2">패시브 상태에서 악기가 주기적으로 생성됩니다. 악기가 2개 이상 있을 때 타이머가 감소하며, 타이머가 만료되면 분노하여 가장 가까운 플레이어를 추격합니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">난이도 변화</p>
-                  <ul className="mt-2 space-y-2 text-slate-700">
-                    <li>• Casual · Standard: 악기 2개 이상일 때만 타이머가 감소합니다.</li>
-                    <li>• Extreme: 악기 1개만 있어도 타이머가 감소하며, 분노 상태의 속도가 130 studs/s로 증가합니다.</li>
-                  </ul>
+                  <p className="text-sm font-semibold text-slate-900">회피법</p>
+                  <p className="mt-2">악기를 먼저 회수하거나 파괴하고, 분노 전에 거리를 벌리세요.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <ul className="mt-2 space-y-2 text-slate-700">
-                    <li>• 악기를 우선적으로 회수하거나 파괴하세요.</li>
-                    <li>• 악기가 많을수록 타이머가 빨라지니 빠르게 수거해야 합니다.</li>
-                    <li>• 트립마인이 있는지 확인하고, 필요하면 공중이나 측면에서 수거하세요.</li>
-                    <li>• Extreme에서는 분노 상태에서 속도가 크게 증가하므로 미리 악기를 정리하는 것이 안전합니다.</li>
-                  </ul>
+                  <p className="mt-2">트립마인을 조심하면서 악기를 빠르게 수거하세요. Extreme에서는 분노 시 속도가 더 빨라집니다.</p>
                 </div>
               </div>
             </div>
