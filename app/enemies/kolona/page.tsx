@@ -52,7 +52,9 @@ export default function KolonaPage() {
                     <a href="/enemies/telefragger" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       ← Telefragger 페이지
                     </a>
-                    <div />
+                    <a href="/enemies/cadence" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      Cadence 페이지 →
+                    </a>
                   </div>
                 </div>
 
