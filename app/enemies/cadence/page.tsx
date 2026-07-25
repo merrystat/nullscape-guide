@@ -73,15 +73,15 @@ export default function CadencePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">맵에 악기를 생성하며, 일정 시간이 지나면 분노 상태에 들어갑니다. 공격력이 증가하고 움직임이 더욱 거칠어집니다.</p>
+                  <p className="mt-2">악기를 맵에 생성. 일정 시간 후 분노하기 시작.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">악기를 우선 파괴하거나 멀리 떨어져서 분노 상태로 변하는 타이밍을 피하세요.</p>
+                  <p className="text-sm font-semibold text-slate-900">대응</p>
+                  <p className="mt-2">악기를 우선 회수·파괴. 팀 분업으로 회수 담당 지정.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">악기 소리와 시각 표시를 동시에 확인해 빠르게 대응하세요. 팀이 있다면 역할 분담으로 악기 회수를 맡기면 안전합니다.</p>
+                  <p className="mt-2">악기가 많을수록 타이머가 빨라지니 신속 수거 중요.</p>
                 </div>
               </div>
             </div>
