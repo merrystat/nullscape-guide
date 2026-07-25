@@ -22,7 +22,7 @@ export default function CadencePage() {
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">레벨 15 이상</p>
+                      <p className="mt-2 text-sm text-slate-700">최소 레벨 15 도달</p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
@@ -35,7 +35,7 @@ export default function CadencePage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">분노 시 속도 증가</span>
+                          <span className="text-slate-700">악기 1개만 있어도 타이머가 감소</span>
                         </div>
                       </div>
                     </div>
@@ -47,12 +47,9 @@ export default function CadencePage() {
                     </div>
                   </div>
 
-                  <div className="mt-4 flex justify-between">
+                  <div className="mt-4 flex justify-start">
                     <a href="/enemies/kolona" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       ← Kolona 페이지
-                    </a>
-                    <a href="/enemies/baby" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      Baby 페이지 →
                     </a>
                   </div>
                 </div>
