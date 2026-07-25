@@ -71,7 +71,7 @@ export default function CadencePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">항상 자신 근처에 악기가 생성됩니다. 악기가 생성될 때 Cadence와 악기가 검은 줄로 연결됩니다.</p>
+                  <p className="mt-2">패시브 상태에서 플레이어 근처에 악기가 소환됩니다. 악기가 생성될 때 Cadence와 악기가 검은 줄로 연결되고, 악기 2개 이상일 때 타이머가 감소합니다. 타이머가 만료되면 분노하여 가장 가까운 플레이어를 추격합니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">회피법</p>
