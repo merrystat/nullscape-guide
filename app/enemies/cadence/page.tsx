@@ -22,7 +22,7 @@ export default function CadencePage() {
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">맵에 악기 오브젝트가 생성된 후 등장</p>
+                      <p className="mt-2 text-sm text-slate-700">레벨 15 이상</p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
@@ -30,12 +30,12 @@ export default function CadencePage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">악기 생성과 행동 패턴이 일정</span>
+                          <span className="text-slate-700">악기 2개 이상일 때만 타이머가 감소</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">악기 출현 속도와 분노 빈도 증가</span>
+                          <span className="text-slate-700">악기 1개만 있어도 타이머 감소, 분노 시 속도 130 studs/s</span>
                         </div>
                       </div>
                     </div>
@@ -68,20 +68,30 @@ export default function CadencePage() {
 
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">외형</p>
-                  <p className="mt-2">악기 요소가 결합된 시계 모양의 적입니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">설명</p>
+                  <p className="mt-2">Cadence는 레벨 15부터 등장하는 패시브 적입니다. 평상시에는 덩굴로 가려진 시계 안에 숨겨져 있고, 양옆에 쇠사슬이 늘어져 있습니다. 분노하면 시계가 깨지며 검은 연기와 4개의 검은 손이 나타나고, 위아래 이빨 사이로 큰 눈인 Cadence가 드러납니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">악기를 맵에 생성. 일정 시간 후 분노하기 시작.</p>
+                  <p className="text-sm font-semibold text-slate-900">행동</p>
+                  <p className="mt-2">패시브 상태에서는 움직이지 않으며 플레이어를 죽일 수 없습니다. 25초마다 하나의 악기가 플레이어 근처에 무작위로 생성됩니다. 악기는 생성 지점에서 소리를 내며, 악기와 Cadence를 검은 전기 줄이 연결합니다.</p>
+                  <p className="mt-2">악기가 2개 이상 남아 있으면 타이머가 감소하고, 그렇지 않으면 증가합니다. Solo에서는 타이머가 50초에서 최대화됩니다.</p>
+                  <p className="mt-2">타이머가 끝나면 Cadence가 분노하여 가장 가까운 플레이어를 80 studs/s로 쫓아 죽입니다. 분노 상태에서는 악기가 생성되지 않으며, 플레이어를 처치하면 잠시 멈춘 뒤 다음 목표를 추적합니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">대응</p>
-                  <p className="mt-2">악기를 우선 회수·파괴. 팀 분업으로 회수 담당 지정.</p>
+                  <p className="text-sm font-semibold text-slate-900">난이도 변화</p>
+                  <ul className="mt-2 space-y-2 text-slate-700">
+                    <li>• Casual · Standard: 악기 2개 이상일 때만 타이머가 감소합니다.</li>
+                    <li>• Extreme: 악기 1개만 있어도 타이머가 감소하며, 분노 상태의 속도가 130 studs/s로 증가합니다.</li>
+                  </ul>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">악기가 많을수록 타이머가 빨라지니 신속 수거 중요.</p>
+                  <ul className="mt-2 space-y-2 text-slate-700">
+                    <li>• 악기를 우선적으로 회수하거나 파괴하세요.</li>
+                    <li>• 악기가 많을수록 타이머가 빨라지니 빠르게 수거해야 합니다.</li>
+                    <li>• 트립마인이 있는지 확인하고, 필요하면 공중이나 측면에서 수거하세요.</li>
+                    <li>• Extreme에서는 분노 상태에서 속도가 크게 증가하므로 미리 악기를 정리하는 것이 안전합니다.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -89,10 +99,13 @@ export default function CadencePage() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
               <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 악기를 남겨두면 Cadence가 더 빠르게 분노합니다.</li>
-                <li>• 분노 상태에서는 이동 속도와 공격 빈도가 증가합니다.</li>
-                <li>• 악기는 우선적으로 회수하거나 파괴하는 것이 안전합니다.</li>
-                <li>• 시각 및 음향 신호를 함께 사용해 대응하세요.</li>
+                <li>• Cadence는 패시브 상태에서 1마리만 등장합니다. Extreme에서도 기본 한계는 1마리입니다.</li>
+                <li>• Trap Card 또는 레벨 50에서 ??? 대신 선택하면 1마리 제한을 우회할 수 있습니다.</li>
+                <li>• 패시브 상태에서는 이동이나 처치가 불가능하며, 꾸준히 똑딱거리는 소리가 들립니다.</li>
+                <li>• 악기 2개 이상이 남아 있으면 타이머가 감소하고, 1개 또는 0개일 때는 증가합니다.</li>
+                <li>• 타이머 만료 시 분노 상태가 되며, 악기는 더 이상 생성되지 않습니다.</li>
+                <li>• 플레이어를 처치하면 잠시 멈춘 뒤 다음 목표를 추적합니다.</li>
+                <li>• Extreme에서는 분노 상태 속도가 130 studs/s로 증가합니다.</li>
               </ul>
             </div>
           </article>
