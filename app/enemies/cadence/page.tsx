@@ -14,7 +14,7 @@ export default function CadencePage() {
                       <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
                       <h2 className="text-4xl font-bold text-slate-900">Cadence</h2>
                     </div>
-                    <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
+                    <div className="rounded-3xl bg-red-500/10 px-4 py-2 text-sm font-semibold text-red-700 ring-1 ring-red-200">
                       난이도: 3
                     </div>
                   </div>
