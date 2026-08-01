@@ -30,17 +30,17 @@ export default function VoidbreakerPage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Casual</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">1 sword per volley</span>
+                          <span className="text-slate-700">1검/볼레이</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Standard</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">2 swords per volley</span>
+                          <span className="text-slate-700">2검/볼레이</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">Each volley fires 2 swords; an additional volley is added</span>
+                          <span className="text-slate-700">각 볼레이 당 2검을 2번 발사(추가 볼레이)</span>
                         </div>
                       </div>
                     </div>
