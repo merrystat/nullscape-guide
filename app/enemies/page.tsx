@@ -48,10 +48,12 @@ export default function BellPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 flex justify-between">
-                    <div />
+                  <div className="mt-4 flex flex-wrap justify-end gap-3">
                     <a href="/enemies/baby" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       Baby 페이지 →
+                    </a>
+                    <a href="/enemies/sigil" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      Sigil 페이지 →
                     </a>
                   </div>
                 </div>
@@ -86,14 +88,6 @@ export default function BellPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Bell은 Flesh 감염 타일을 정화하는 데 활용할 수 있습니다.</li>
-                <li>• 시야 방해 효과가 있으므로 팀원에게 위치를 알리는 것이 중요합니다.</li>
-                <li>• 특정 저주와 조합되면 위험도가 크게 올라갑니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

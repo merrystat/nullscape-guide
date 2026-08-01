@@ -89,13 +89,6 @@ export default function SpringerPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Springer는 고체 판정이므로 통과할 수 없습니다.</li>
-                <li>• 충격파로 인해 튕겨나가면서 Seamine이나 다른 적에게 접촉할 수 있으니 주의하세요.</li>
-              </ul>
-            </div>
             <PageNavArrows />
           </article>
         </div>

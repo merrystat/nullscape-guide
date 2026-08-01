@@ -93,15 +93,6 @@ export default function HuskPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 뒤로 돌아가는 경로를 피하면 Husk를 상대하기 쉬워집니다.</li>
-                <li>• 점프로 Husk를 뛰어넘을 수 있습니다.</li>
-                <li>• 긴 트레일은 되돌아가는 상황에서 도움이 됩니다.</li>
-                <li>• 허스크가 여러 마리 있다면 허스크들끼리 따라오며 줄을 형성합니다.</li>
-              </ul>
-            </div>
             <PageNavArrows />
           </article>
         </div>

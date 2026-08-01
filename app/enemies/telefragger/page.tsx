@@ -92,14 +92,6 @@ export default function TelefraggerPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Extreme에서는 순간이동 후 흰 선으로 표시된 대시를 실행하며, 대시에 맞으면 즉사합니다.</li>
-                <li>• 타겟이 아닌 플레이어도 Telefragger 근처에 있으면 피해를 입을 수 있습니다.</li>
-                <li>• 이동 소리로 대략적인 위치를 파악할 수 있습니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

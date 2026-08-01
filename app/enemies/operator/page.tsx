@@ -86,15 +86,6 @@ export default function OperatorPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 능력 사용 중에도 입력으로 간주되어 Operator가 트리거됩니다.</li>
-                <li>• Spirit 클래스는 유령 상태에서도 Operator에게 죽을 수 있으니 주의하세요.</li>
-                <li>• 처치 판정은 약 11틱(2.5초)에 발생합니다.</li>
-                <li>• 레일 탑승 중이거나 burn 효과로 이동 중일 때는 입력 없이도 이동 가능합니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

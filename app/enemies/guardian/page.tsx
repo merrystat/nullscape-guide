@@ -87,14 +87,6 @@ export default function GuardianPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Guardian을 영구 선택하면 레벨 20부터 Voidbound Guardian이 선택지에 추가됩니다.</li>
-                <li>• Altar of Passage 사용 시 분노 상태가 되어 이동 및 발사 속도가 빨라집니다.</li>
-                <li>• Extreme에서는 정지 중 투명화되므로 소리에 더 의존해야 합니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

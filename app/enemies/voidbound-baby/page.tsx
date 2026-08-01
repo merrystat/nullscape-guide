@@ -85,15 +85,6 @@ export default function VoidboundBabyPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• Baby의 Voidbound 변종으로 대시 빈도와 거리 증가.</li>
-                <li>• 표시가 빨리 사라져서 추적이 더 어렵습니다.</li>
-                <li>• 대시 소리가 더 작아 청각 의존도가 떨어집니다.</li>
-
-              </ul>
-            </div>
           </article>
         </div>
       </div>

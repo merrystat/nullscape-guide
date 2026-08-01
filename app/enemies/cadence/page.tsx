@@ -47,9 +47,12 @@ export default function CadencePage() {
                     </div>
                   </div>
 
-                  <div className="mt-4 flex justify-start">
+                  <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-between">
                     <a href="/enemies/kolona" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       ← Kolona 페이지
+                    </a>
+                    <a href="/enemies/sigil" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                      Sigil 페이지 →
                     </a>
                   </div>
                 </div>
@@ -81,14 +84,6 @@ export default function CadencePage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 타이머 만료 시 분노 상태가 되며, 악기는 더 이상 생성되지 않습니다.</li>
-                <li>• 플레이어를 처치하면 잠시 멈춘 뒤 다음 목표를 추적합니다.</li>
-                <li>• Extreme에서는 분노 상태 속도가 130 studs/s로 증가합니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

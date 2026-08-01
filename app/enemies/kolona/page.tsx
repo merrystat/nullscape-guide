@@ -88,14 +88,6 @@ export default function KolonaPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                    <li>• Medal 획득 시 해당 라운드에서 더 이상 등장하지 않습니다.</li>
-                <li>• Lost Embers 저주 적용 시 카운트 중 현재 숫자가 표시되지 않습니다.</li>
-                <li>• Kolóna는 그리스어·슬로바키아어로 '기둥'을 의미합니다.</li>
-              </ul>
-            </div>
           </article>
         </div>
       </div>

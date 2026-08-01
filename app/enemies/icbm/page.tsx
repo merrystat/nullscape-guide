@@ -90,14 +90,6 @@ export default function ICBMPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Notes</p>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                <li>• 낙하 위치는 한 번 정해지면 추가 조정 없이 떨어집니다.</li>
-                <li>• Extreme에서는 플레이어 이동을 예측해 위치를 조정합니다.</li>
-                <li>• 이후 약 5초 뒤 다시 락온하며, 솔로일 때 지연이 크게 늘어납니다.</li>
-              </ul>
-            </div>
             <PageNavArrows />
           </article>
         </div>
