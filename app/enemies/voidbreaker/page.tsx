@@ -13,9 +13,9 @@ export default function VoidbreakerPage() {
                     <div>
                       <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
                       <h2 className="text-4xl font-bold text-slate-900">Voidbreaker</h2>
-                    </div>
-                    <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
-                      난이도: 2
+                    <div>
+                      <p className="text-sm font-semibold text-slate-900">대응</p>
+                      <p className="mt-2">검의 발사 방향에서 벗어나면 안전합니다. 점프/낙하로는 회피되지 않으니 수평 이동으로 회피하세요.</p>
                     </div>
                   </div>
 
