@@ -41,7 +41,11 @@ export default function VoidbreakerPage() {
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
-                      <div className="mt-3 rounded-2xl border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">없음</div>
+                      <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Blade Carousel</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Ballet of Blades</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Blade Bombardment</a>
+                      </div>
                     </div>
                   </div>
 
@@ -79,26 +83,7 @@ export default function VoidbreakerPage() {
                   <p className="text-sm font-semibold text-slate-900">팁</p>
                   <p className="mt-2">등 뒤의 검은 보통 무시해도 괜찮고, 빠른 이동 능력이 있으면 회피가 쉬워집니다. 관련 강화(예: Ballet of Blades, Blade Bombardment)가 조합될 경우 난이도가 달라질 수 있으니 주의하세요.</p>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">관련 저주</p>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-3">
-                    <a href="https://nullscape.wiki/wiki/Blade_Carousel" target="_blank" rel="noreferrer" className="rounded-2xl border p-3 text-center">
-                      <img src="https://static.wikitide.net/nullscapewiki/thumb/6/6f/Curse_Book.png/100px-Curse_Book.png" alt="Blade Carousel" className="mx-auto h-16 w-16 object-contain" />
-                      <p className="mt-2 text-sm font-medium">Blade Carousel</p>
-                      <p className="text-xs text-slate-500">그레이터 저주 — Voidbreaker's swords now spin around you.</p>
-                    </a>
-                    <a href="https://nullscape.wiki/wiki/Ballet_of_Blades" target="_blank" rel="noreferrer" className="rounded-2xl border p-3 text-center">
-                      <img src="https://static.wikitide.net/nullscapewiki/thumb/8/8b/BladeCarousel.png/85px-BladeCarousel.png" alt="Ballet of Blades" className="mx-auto h-16 w-16 object-contain" />
-                      <p className="mt-2 text-sm font-medium">Ballet of Blades</p>
-                      <p className="text-xs text-slate-500">그레이터 저주 — Voidbreaker summons more swords; volleys fire rapidly.</p>
-                    </a>
-                    <a href="https://nullscape.wiki/wiki/Blade_Bombardment" target="_blank" rel="noreferrer" className="rounded-2xl border p-3 text-center">
-                      <img src="https://static.wikitide.net/nullscapewiki/thumb/0/07/BladeBombardment.png/85px-BladeBombardment.png" alt="Blade Bombardment" className="mx-auto h-16 w-16 object-contain" />
-                      <p className="mt-2 text-sm font-medium">Blade Bombardment</p>
-                      <p className="text-xs text-slate-500">그레이터 저주 — Fires more swords at once; swords move faster but summon slower.</p>
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </article>
