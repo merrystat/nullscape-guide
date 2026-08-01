@@ -42,9 +42,9 @@ export default function VoidbreakerPage() {
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Blade Carousel</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Ballet of Blades</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">Blade Bombardment</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">블레이드 캐러셀</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">검의 발레</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">블레이드 폭격</a>
                       </div>
                     </div>
                   </div>
