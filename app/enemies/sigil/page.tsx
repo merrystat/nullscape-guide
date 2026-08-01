@@ -64,11 +64,11 @@ export default function SigilPage() {
                   <p className="mt-2">노란-주황색 별 모양 룬 형태의 적입니다. 4개의 신경 같은 팔과 다이아몬드형 눈을 가집니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">행동</p>
+                  <p className="text-sm font-semibold text-slate-900">특징</p>
                   <p className="mt-2">Sigil은 플레이어를 무작위로 락온하고, 충전 후 추적 레이저를 발사합니다. 레이저는 목표를 천천히 따라갑니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">특징</p>
+                  <p className="text-sm font-semibold text-slate-900">회피법</p>
                   <p className="mt-2">빔은 락온된 플레이어에게만 보이며 다른 플레이어는 피해를 받지 않습니다. 6명 미만 생존 시 빔 재사용 시간이 늘어납니다.</p>
                 </div>
                 <div>
