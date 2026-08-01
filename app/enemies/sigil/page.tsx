@@ -45,12 +45,9 @@ export default function SigilPage() {
                     </div>
                   </div>
 
-                  <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-between">
-                    <a href="/enemies/cadence" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      ← Cadence 페이지
-                    </a>
+                  <div className="mt-4 flex justify-start">
                     <a href="/enemies/voidbreaker" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
-                      Voidbreaker 페이지 →
+                      ← Voidbreaker 페이지
                     </a>
                   </div>
                 </div>
