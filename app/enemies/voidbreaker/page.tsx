@@ -64,20 +64,20 @@ export default function VoidbreakerPage() {
 
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">외형</p>
-                  <p className="mt-2">보이드 기사가 검과 어둠의 기운을 장착한 형태입니다. 짙은 음영의 갑옷과 발끝에서 검은 에너지가 흘러나옵니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">요약</p>
+                  <p className="mt-2">Voidbreaker는 레벨 15부터 등장하는 보이드 속성의 기사형 적입니다. 플레이어 근처에 소환되어 검을 여러 개 만들어내며, 잠시 후 검들이 지정된 방향으로 발사되어 타격과 넉백을 가합니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">Voidbreaker는 주변 공간에서 검을 소환해 발사합니다. 검은 일정한 각도로 날아가며, 피격 시 넉백과 추가 데미지를 남깁니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">행동</p>
+                  <p className="mt-2">방울처럼 사라졌다가 플레이어 주위에 등장해 경고한 뒤 검을 소환합니다. 공격이 끝나면 사라집니다. 추가 스택은 발동 빈도를 높입니다(스택은 등장 빈도에 영향).</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">검 발사 패턴을 읽고, 발사 방향과 타이밍을 피하세요. 검이 떨어지는 지점을 미리 확보하면 안전합니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">난이도 변화</p>
+                  <p className="mt-2">Casual: 1검/볼레이, Standard: 2검/볼레이, Extreme: 추가 볼레이(각 볼레이 당 2검).</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">이동 능력이 있으면 검을 쉽게 회피할 수 있습니다. 좁은 공간에서는 측면으로 빠르게 이동하는 것이 좋습니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">대응</p>
+                  <p className="mt-2">검의 발사 방향에서 벗어나면 안전합니다. 점프/낙하로는 회피되지 않으니 수평 이동으로 회피하세요. 벽이나 지형으로 검을 가려 피해를 줄일 수 있습니다.</p>
                 </div>
               </div>
             </div>
