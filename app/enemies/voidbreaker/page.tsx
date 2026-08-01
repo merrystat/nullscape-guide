@@ -28,14 +28,19 @@ export default function VoidbreakerPage() {
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
                       <div className="mt-2 flex flex-col gap-2">
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
-                          <span className="font-semibold text-slate-500 shrink-0">Casual · Standard</span>
+                          <span className="font-semibold text-slate-500 shrink-0">Casual</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">변화 없음</span>
+                          <span className="text-slate-700">1 sword per volley</span>
+                        </div>
+                        <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
+                          <span className="font-semibold text-slate-500 shrink-0">Standard</span>
+                          <span className="text-slate-400">—</span>
+                          <span className="text-slate-700">2 swords per volley</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">검 발사 빈도 증가</span>
+                          <span className="text-slate-700">Each volley fires 2 swords; an additional volley is added</span>
                         </div>
                       </div>
                     </div>
@@ -43,8 +48,8 @@ export default function VoidbreakerPage() {
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">관련 저주</p>
                       <div className="mt-3 grid gap-3 sm:grid-cols-2 curse-list">
                         <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">블레이드 회전목마</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">검의 발레</a>
-                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition">블레이드 폭격</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition curse-yellow">검의 발레</a>
+                        <a href="/curses" className="rounded-2xl border p-3 text-center text-sm font-medium transition curse-yellow">블레이드 폭격</a>
                       </div>
                     </div>
                   </div>
