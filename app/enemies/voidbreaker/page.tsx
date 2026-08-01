@@ -22,7 +22,7 @@ export default function VoidbreakerPage() {
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">최소 레벨 18 도달</p>
+                      <p className="mt-2 text-sm text-slate-700">최소 레벨 15 도달</p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
@@ -64,20 +64,20 @@ export default function VoidbreakerPage() {
 
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">요약</p>
-                  <p className="mt-2">Voidbreaker는 레벨 15부터 등장하는 보이드 속성의 기사형 적입니다. 플레이어 근처에 소환되어 검을 여러 개 만들어내며, 잠시 후 검들이 지정된 방향으로 발사되어 타격과 넉백을 가합니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">외형</p>
+                  <p className="mt-2">검과 붉은 보석이 박힌 긴 검을 든 갑옷 입은 기사 모습입니다. 손잡이는 가시 형태로 장식되어 있으며, 어두운 분위기의 모델입니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">행동</p>
-                  <p className="mt-2">방울처럼 사라졌다가 플레이어 주위에 등장해 경고한 뒤 검을 소환합니다. 공격이 끝나면 사라집니다. 추가 스택은 발동 빈도를 높입니다(스택은 등장 빈도에 영향).</p>
+                  <p className="text-sm font-semibold text-slate-900">특징</p>
+                  <p className="mt-2">플레이어 근처에 나타나 검을 소환한 뒤 일정 시간 후 검을 발사합니다. 검은 지정 방향으로 공격하며 추가 스택은 등장 빈도를 높입니다. 클라이언트 사이드 적으로 레벨 15부터 등장합니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">난이도 변화</p>
-                  <p className="mt-2">Casual: 1검/볼레이, Standard: 2검/볼레이, Extreme: 추가 볼레이(각 볼레이 당 2검).</p>
+                  <p className="text-sm font-semibold text-slate-900">회피법</p>
+                  <p className="mt-2">검의 발사 방향에서 벗어나 수평으로 이동해 피하세요. 점프나 낙하로는 회피되지 않습니다. 벽이나 지형으로 검을 가려 피해를 줄일 수 있습니다.</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">대응</p>
-                  <p className="mt-2">검의 발사 방향에서 벗어나면 안전합니다. 점프/낙하로는 회피되지 않으니 수평 이동으로 회피하세요. 벽이나 지형으로 검을 가려 피해를 줄일 수 있습니다.</p>
+                  <p className="text-sm font-semibold text-slate-900">팁</p>
+                  <p className="mt-2">등 뒤의 검은 보통 무시해도 괜찮고, 빠른 이동 능력이 있으면 회피가 쉬워집니다. 관련 강화(예: Ballet of Blades, Blade Bombardment)가 조합될 경우 난이도가 달라질 수 있으니 주의하세요.</p>
                 </div>
               </div>
             </div>
