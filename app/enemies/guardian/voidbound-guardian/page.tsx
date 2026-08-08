@@ -22,7 +22,7 @@ export default function VoidboundGuardianPage() {
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">선택 가능 조건</p>
-                      <p className="mt-2 text-sm text-slate-700">최소 레벨 15 도달</p>
+                      <p className="mt-2 text-sm text-slate-700">레벨 20 이상, Guardian 보유 시 등장</p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 bg-white p-4">
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">난이도별 변화</p>
@@ -30,17 +30,17 @@ export default function VoidboundGuardianPage() {
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Casual</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">설명 준비 중</span>
+                          <span className="text-slate-700">느린 투사체가 충돌하면 2개의 빔으로 분해</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Standard</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">설명 준비 중</span>
+                          <span className="text-slate-700">빠른 투사체가 4개의 빔으로 분해</span>
                         </div>
                         <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm flex gap-2">
                           <span className="font-semibold text-slate-500 shrink-0">Extreme</span>
                           <span className="text-slate-400">—</span>
-                          <span className="text-slate-700">설명 준비 중</span>
+                          <span className="text-slate-700">4개 투사체, 더 빠른 발사 속도와 속도로 6개의 빔 폭발</span>
                         </div>
                       </div>
                     </div>
@@ -68,19 +68,19 @@ export default function VoidboundGuardianPage() {
               <div className="mt-8 space-y-4 text-slate-700">
                 <div>
                   <p className="text-sm font-semibold text-slate-900">외형</p>
-                  <p className="mt-2">내용 준비 중 — 원하시면 위키 원문을 반영하겠습니다. 출처: https://nullscape.wiki/wiki/Voidbound_Guardian (CC BY-SA)</p>
+                  <p className="mt-2">Guardian의 파생형으로, 보라색 빛과 가시 같은 덩굴, 꽃, 부러진 턱을 가진 어두운 형태입니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">특징</p>
-                  <p className="mt-2">내용 준비 중</p>
+                  <p className="mt-2">Guardian처럼 공격하지만 탄환이 더 빠르고, 표면에 닿으면 빔으로 폭발하는 추가 공격을 합니다. 알터 사용 시 더 빨리 움직이고 사격합니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">내용 준비 중</p>
+                  <p className="mt-2">지속적으로 이동하며 피하고, 빔이 남는 영역에 오래 머무르지 마세요. 정지하면 위험합니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">내용 준비 중</p>
+                  <p className="mt-2">스피드 업그레이드와 레이더 모듈로 대응하면 훨씬 안전합니다. 초반에 선택하면 도망치기 어려우니 여유가 있을 때 고르는 것이 좋습니다.</p>
                 </div>
               </div>
             </div>

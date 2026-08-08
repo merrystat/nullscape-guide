@@ -54,7 +54,9 @@ export default function GuardianPage() {
                     <a href="/enemies/telefragger" className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
                       Telefragger 페이지 →
                     </a>
-                    <a href="/enemies/guardian/voidbound-guardian" className="inline-flex items-center gap-2 rounded-full bg-slate-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-600">Voidbound Guardian</a>
+                    <a href="/enemies/guardian/voidbound-guardian" className="inline-flex items-center gap-2 rounded-full bg-slate-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-600">
+                      Voidbound Guardian 페이지
+                    </a>
                   </div>
                 </div>
 
