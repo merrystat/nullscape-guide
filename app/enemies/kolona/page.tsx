@@ -83,7 +83,7 @@ export default function KolonaPage() {
 
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
-                  <p className="mt-2">설정에서 '중앙 적 표시' 옵션을 켜면 목표 숫자가 화면 중앙에 표시됩니다. 기둥은 매 카운트마다 22.5°씩 회전하므로 각도로 현재 카운트를 역산할 수 있습니다.</p>
+                  <p className="mt-2">설정에서 &apos;중앙 적 표시&apos; 옵션을 켜면 목표 숫자가 화면 중앙에 표시됩니다. 기둥은 매 카운트마다 22.5°씩 회전하므로 각도로 현재 카운트를 역산할 수 있습니다.</p>
                 </div>
               </div>
             </div>

@@ -13,9 +13,9 @@ export default function VoidbreakerPage() {
                     <div>
                       <p className="text-sm uppercase tracking-[0.25em] text-slate-500">이름</p>
                       <h2 className="text-4xl font-bold text-slate-900">Voidbreaker</h2>
-                    <div>
-                      <p className="text-sm font-semibold text-slate-900">대응</p>
-                      <p className="mt-2">검의 발사 방향에서 벗어나면 안전합니다. 점프/낙하로는 회피되지 않으니 수평 이동으로 회피하세요.</p>
+                    </div>
+                    <div className="rounded-3xl bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-700 ring-1 ring-amber-200">
+                      난이도: 2
                     </div>
                   </div>
 
@@ -82,13 +82,12 @@ export default function VoidbreakerPage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">회피법</p>
-                  <p className="mt-2">검의 발사 방향에서 벗어나 수평으로 이동해 피하세요. 점프나 낙하로는 회피되지 않습니다. 벽이나 지형으로 검을 가려 피해를 줄일 수 있습니다.</p>
+                  <p className="mt-2">검의 발사 방향에서 벗어나 수평으로 이동해 피하세요. 점프나 낙하로는 회피되지 않습니다.</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">팁</p>
                   <p className="mt-2">등 뒤의 검은 보통 무시해도 괜찮고, 빠른 이동 능력이 있으면 회피가 쉬워집니다. 관련 강화(예: Ballet of Blades, Blade Bombardment)가 조합될 경우 난이도가 달라질 수 있으니 주의하세요.</p>
                 </div>
-                
               </div>
             </div>
           </article>
